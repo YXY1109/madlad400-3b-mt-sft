@@ -6,7 +6,7 @@ from peft import PeftModel
 # 原始模型路径
 root_path = os.path.dirname(os.path.abspath(__file__))
 model_name = os.path.join(root_path, "models/google/madlad400-3b-mt")
-lora_name = os.path.join(root_path, "models/madlad-lora-zh-en-final")
+lora_name = os.path.join(root_path, "models/madlad-lora-zh-en")
 
 # 加载基础模型和分词器
 tokenizer = T5Tokenizer.from_pretrained(model_name)
